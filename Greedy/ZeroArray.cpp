@@ -12,7 +12,7 @@ int main()
 	for (int i = 0; i < n; i++)
 		cin >> a[i];
 	sort(a.begin(), a.end());
-	int sum = 0;
+	long long int sum = 0;
 	for (auto num : a)
 		sum += num;
 	if ((sum % 2 == 0) && (sum - a[n - 1] >= a[n - 1]))
